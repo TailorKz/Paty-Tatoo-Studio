@@ -32,7 +32,7 @@ function App() {
         <a href="https://wa.me/554991759767?text=" target="_blank">
           <button><FaWhatsapp />&nbsp;Enviar mensagem</button>
           </a>
-          <a id='insta' target="_blank" href=""><SiInstagram /></a>
+          <a id='insta' target="_blank" href=""></a>
           </div>
 
         </div>
@@ -50,10 +50,15 @@ function App() {
         </div>
         <div className='section--title'>
         <h1>SOBRE MIM</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
        </div>
       
       </section>
+      </div>
+      <div className='works'>
+        <div className='works--text'>
+          <h2>Trabalhos realizados</h2>
+        </div>
       </div>
       </div>
     </>
