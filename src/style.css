@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Variable.ttf') format('truetype'); /* Altere o nome e o formato conforme necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('./fonts/Bebas-Regular.otf') format('truetype'); /* Altere o nome e o formato conforme necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: #1B0C1A;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    background-image: url('./assets/Frame 7.png');
+    background-size: auto;
+    
+    
+}
+
+.navbar--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    background-color: #4b2138c7;
+    margin: auto;
+    margin-top: 25px;
+    gap: 130px;
+    border-radius: 40px 40px 40px 40px;
+    
+}
+
+.navbar--content a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFF4EB;
+    font-family: 'Satoshi';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar--content a:hover {
+    font-size: 16px;
+    color: #e77ec8;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    background-image: url('./assets/fundo.png');
+    height: 529px;
+}
+
+.container--main {
+    display: flex;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.container--text {
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.container--text h1 {
+    font-size: 70px;
+    color: #FADCD5;
+}
+.container a {
+text-decoration: none;
+
+}
+
+.icons {
+    display: flex;      
+}
+#insta {
+    margin-top: 48px;
+    font-size: 28px;
+    color: #FADCD5;
+}
+
+#insta:hover {
+    margin-top: 48px;
+    font-size: 30px;
+    color: #ffc0dd;
+}
+
+.container button {
+    background-color: #FADCD5;
+    padding: 10px 20px ;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    font-size: 19px;
+    background-color: #ffc0dd;
+}
+
+.container--picture img {
+    max-width: 76%;
+}
+
+.vazia {
+    width: 100%;
+    height: 65px;
+    background-color: #fadcd5;
+}
+
+.section1 {
+    background-image: url('');
+    
+}
+
+.section {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    height: auto;
+   
+}
+
+.section--main img {
+    height: 580px;
+}
+
+.section--title {
+    margin-left: 3em;
+}
+
+.section--title h1 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #fadcd5;
+}
+
+.section--title p {
+    font-size: 25px;
+    color: #fadcd5;
+
+}
+
+.main {
+    height: 2560px;
+    background-image: url('./assets/fundoantigo.jpg');
+    background-repeat: round;
+}
