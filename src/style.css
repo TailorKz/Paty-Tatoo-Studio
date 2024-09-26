@@ -12,6 +12,7 @@
     font-style: normal;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +55,10 @@
 .navbar--content a:hover {
     font-size: 16px;
     color: #e77ec8;
+}
+
+.navbar img {
+    border-radius: 20%;
 }
 
 .container {
@@ -193,44 +198,80 @@ text-decoration: none;
 }
 
 .carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px; /* Adiciona um espaço acima do carrossel */
+}
+
+.carrossel--container {
+  display: flex;
+  gap: 20px; /* Espaço entre as imagens */
+  transition: transform 0.5s ease-in-out; /* Animação de transição */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  max-width: 1100px; /* Tamanho máximo da área visível */
+  justify-content: center; /* Centraliza as imagens */
+  overflow: hidden; /* Esconde as imagens que estão fora do contêiner */
+}
+
+.carrossel--item {
+  flex-shrink: 0; /* Impede que o item diminua */
+  width: 300px; /* Largura de cada imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.carrossel--item img {
+  width: 100%;
+  height: auto; /* Ajusta a altura para manter a proporção */
+  border-radius: 30px; /* Bordas arredondadas */
+  object-fit: cover; /* Garante que a imagem preencha o espaço */
+}
+
+.carrossel button {
+  background-color: #fadcd5;
+  color: #1b0c1a;
+  border: none;
+  padding: 15px 15px 12px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 20px;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+}
+
+.carrossel button:hover {
+  background-color: #ffc0dd;
+}
+
+.personalize {
     display: flex;
-    align-items: center;
+    margin: 80px auto;
     justify-content: center;
-    position: relative;
-  }
-  
-  .carrossel--container {
+    max-width: 80%;
+    
+}
+
+.personalize--image img {
+    height:580px;
+    margin-left: 120px;
+    border-radius: 10%;
+}
+
+
+
+.locate {
     display: flex;
-    gap: 10px; /* Espaço entre as imagens */
-    transition: transform 0.5s ease-in-out; /* Animação de transição */
-    width: 600px; /* Tamanho da área visível das imagens */
-    overflow: hidden;
-  }
-  
-  .carrossel--item {
-    width: 200px; /* Largura de cada imagem */
-    height: 200px;
-    flex-shrink: 0; /* Impede que o item diminua */
-  }
-  
-  .carrossel--item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carrossel button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0 20px;
-    transition: background-color 0.3s;
-  }
-  
-  .carrossel button:hover {
-    background-color: #555;
-  }
-  
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.locate--text {
+    font-size: 38px;
+    font-family: 'Bebas Neue';
+    color: #fadcd5;
+}
+
+.locate--map {
+    height: 100vh;
+}
