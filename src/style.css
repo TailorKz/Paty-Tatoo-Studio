@@ -193,7 +193,7 @@ text-decoration: none;
     font-size: 26px;
     color: white;
     text-transform: uppercase;
-    font-family: 'Bebas';
+        
     color: #fadcd5;
 }
 
@@ -261,17 +261,74 @@ text-decoration: none;
 
 
 .locate {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.locate--text {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .locate--title {
     font-size: 38px;
-    font-family: 'Bebas Neue';
+    margin-bottom: 1rem;
     color: #fadcd5;
-}
+    font-family: 'Bebas Neue';
 
-.locate--map {
-    height: 100vh;
-}
+  }
+  
+  .locate--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  
+  .locate--text {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+   
+    justify-content: center; /* Centraliza verticalmente */
+  margin-top: 60px;
+    color: #fadcd5;
+    height: 100%; /* Garante que a altura da div seja usada por completo */
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+  }
+  
+  .locate--text h3 {
+    margin-bottom: 0; /* Remove o espaçamento padrão inferior do h3 */
+  }
+  
+  .locate--text p {
+    margin-top: 0; /* Remove o espaçamento padrão superior do p */
+    margin-bottom: 1rem; /* Adiciona o espaçamento entre o par <h3> e <p> e o próximo grupo */
+    
+  }
+  
+  /* Remove o espaçamento inferior no último par de <h3> e <p> */
+  .locate--text h3:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .locate--text p:last-of-type {
+    margin-bottom: 0;
+  }
+  .locate--map {
+    flex: 1;
+    height: 400px;
+    /* Ajuste a altura conforme necessário */
+  }
+  
+  @media (max-width: 768px) {
+    .locate--content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .locate--map {
+      width: 100%;
+    }
+  }

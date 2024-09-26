@@ -9,7 +9,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { tattoo } from './tattoos';
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import { FaSquarePhoneFlip } from "react-icons/fa6";
+import { FiMapPin } from "react-icons/fi";
+import { BsFillTelephoneFill } from "react-icons/bs";
+
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,10 +44,25 @@ function App() {
 
   const visibleImages = getVisibleImages();
 
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyACgRLwKhrZWAPRDi_pmynTajijGa0XwWA"
-  })
+    function MyMap() {
+    return (
+      <MapContainer 
+  center={[-26.985868532578724, -53.53293061398973]} 
+  zoom={19} 
+  style={{ height: '100%', width: '100%' }} // Ocupará 100% do contêiner pai
+>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={[-26.985868532578724, -53.53293061398973]}>
+          <Popup>
+            Localização Específica
+          </Popup>
+        </Marker>
+      </MapContainer>
+    );
+  }
+ 
 
   return (
     <>
@@ -127,20 +147,21 @@ function App() {
             </div>
           </section>
           <div className='locate'>
-          <h2 className='locate--text'>Localização do Studio</h2>
+          <h2 className='locate--title'>Localização do Studio</h2>
           </div>
-          <div className='locate--map'>
-            {isLoaded ? (
-      <GoogleMap
-        mapContainerStyle={{width: '60%', height: '60%'}}
-        center={{
-          lat: -26.98592321338495,
-          lng: -53.532928103323634
-        }}
-        zoom={15} 
-      ></GoogleMap>
-  ) : <></>}
-          </div>
+          <div className='locate--content'>
+    <div className='locate--text'>
+      <h3><FiMapPin /> R. Simões, n° 68 - Centro, Iporã do Oeste - SC, 89899-000</h3>
+      <p>Localização do Studio</p>
+      <h3><BsFillTelephoneFill /> (49) 991640480</h3>
+      <p> Número do Studio</p>
+      <h3><BsFillTelephoneFill /> (49) 991759767</h3>
+      <p>Número - Patrícia</p>
+    </div>
+    <div className='locate--map'>
+      <MyMap />
+    </div>
+  </div>
       </div>
     </>
   );
