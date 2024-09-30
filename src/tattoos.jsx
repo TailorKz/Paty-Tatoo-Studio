@@ -7,6 +7,7 @@ import tattoo6 from './assets/tattoos/tatto6.png';
 import tattoo7 from './assets/tattoos/tatto7.png';
 import tattoo8 from './assets/tattoos/tatto8.png';
 import tattoo9 from './assets/tattoos/tatto9.png';
+import tattoo10 from './assets/tattoos/tatto10.png';
 
 export const tattoo = {
     tattoo1,
@@ -18,4 +19,5 @@ export const tattoo = {
     tattoo7,
     tattoo8,
     tattoo9,
+    tattoo10,
 };

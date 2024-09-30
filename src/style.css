@@ -54,12 +54,70 @@
 
 .navbar--content a:hover {
     font-size: 16px;
-    color: #e77ec8;
+    color: #ffc0dd;
 }
 
 .navbar img {
-    border-radius: 20%;
+    cursor: pointer;
 }
+
+.hamburger-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Ocultar o conteúdo da navbar no mobile */
+
+  .navbar {
+    background-color: #401C31;
+  }
+  .navbar--content {
+    display: none;
+    
+  }
+
+  /* Exibir o ícone do menu hambúrguer */
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 35px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    font-size: 30px;
+    color: #FFF4EB;
+    cursor: pointer;
+  }
+
+  /* Estilizar o menu móvel */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4b2138c7;
+    position: absolute;
+    top: 120px; /* Ajuste com base na altura da sua navbar */
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .mobile-menu a {
+    font-size: 18px;
+    color: #FFF4EB;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu a:hover {
+    color: #ffc0dd;
+  }
+}
+
+
 
 .container {
     display: flex;
@@ -94,17 +152,9 @@ text-decoration: none;
 .icons {
     display: flex;      
 }
-#insta {
-    margin-top: 48px;
-    font-size: 28px;
-    color: #FADCD5;
-}
 
-#insta:hover {
-    margin-top: 48px;
-    font-size: 30px;
-    color: #ffc0dd;
-}
+
+
 
 .container button {
     background-color: #FADCD5;
@@ -127,6 +177,38 @@ text-decoration: none;
 
 .container--picture img {
     max-width: 76%;
+}
+
+@media (max-width: 1652px) {
+  .container--main {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 1487px) {
+  .container--main {
+    max-width: 100%;
+  }
+  
+  .container--picture img {
+    max-width: 66%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.container--text h1 {
+  font-size: 60px;
+  color: #FADCD5;
+  
+}
+
+}
+
+@media (max-width: 1370px) {
+  .container {
+    height: 20%;
+}
 }
 
 .vazia {
@@ -174,7 +256,7 @@ text-decoration: none;
 }
 
 .main {
-    height: 2560px;
+    height: 2590px;
     background-image: url('./assets/fundoantigo.jpg');
     background-repeat: round;
 }
@@ -208,12 +290,13 @@ text-decoration: none;
 .carrossel--container {
   display: flex;
   gap: 20px; /* Espaço entre as imagens */
-  transition: transform 0.5s ease-in-out; /* Animação de transição */
+  transition: transform 3.5s ease-in-out; /* Animação de transição */
   width: 100%; /* Ocupa toda a largura do contêiner */
   max-width: 1100px; /* Tamanho máximo da área visível */
   justify-content: center; /* Centraliza as imagens */
   overflow: hidden; /* Esconde as imagens que estão fora do contêiner */
 }
+
 
 .carrossel--item {
   flex-shrink: 0; /* Impede que o item diminua */
@@ -331,4 +414,39 @@ text-decoration: none;
     .locate--map {
       width: 100%;
     }
+  }
+
+  footer {
+    height: 110px;
+    background-color:#fadcd5; 
+    display: flex;
+    align-items: center;
+  }
+
+  .final--icons {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 78px;
+    gap: 50px;
+  }
+  
+  .final--icons a {
+    color: #1b0c1a;
+  }
+
+  .final--icons a:hover {
+    color: #3f0a3b;
+    font-size: 82px;
+  }
+
+  
+  @media (max-width: 1243px) {
+    .navbar--content {
+      gap: 7%;
+    }
+
+
+
   }

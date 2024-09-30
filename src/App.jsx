@@ -14,9 +14,17 @@ import 'leaflet/dist/leaflet.css';
 import { FaSquarePhoneFlip } from "react-icons/fa6";
 import { FiMapPin } from "react-icons/fi";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaBars } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar o menu móvel
+
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const tattooArray = Object.values(tattoo);
   const visibleImagesCount = 3;
@@ -47,14 +55,14 @@ function App() {
     function MyMap() {
     return (
       <MapContainer 
-  center={[-26.985868532578724, -53.53293061398973]} 
+  center={[-26.98587539505993, -53.532983784997626]} 
   zoom={19} 
   style={{ height: '100%', width: '100%' }} // Ocupará 100% do contêiner pai
 >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[-26.985868532578724, -53.53293061398973]}>
+        <Marker position={[-26.98587539505993, -53.532983784997626]}>
           <Popup>
             Localização Específica
           </Popup>
@@ -66,7 +74,7 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
+       <nav className="navbar">
         <div className="navbar--content">
           <a href="#">Página inicial</a>
           <a href="#">Sobre mim</a>
@@ -74,6 +82,19 @@ function App() {
           <a href="#">Contato</a>
           <a href="#">Localização</a>
         </div>
+        {/* Ícone do menu hambúrguer para mobile */}
+        <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        {/* Menu móvel */}
+        {menuOpen && (
+          <div className="mobile-menu">
+            <a href="#" onClick={() => setMenuOpen(false)}>Página inicial</a>
+            <a href="#" onClick={() => setMenuOpen(false)}>Sobre mim</a>
+            <a href="#" onClick={() => setMenuOpen(false)}>Contato</a>
+            <a href="#" onClick={() => setMenuOpen(false)}>Localização</a>
+          </div>
+        )}
       </nav>
       <section className="container">
         <div className="container--main">
@@ -162,7 +183,13 @@ function App() {
       <MyMap />
     </div>
   </div>
-      </div>
+  
+      </div><footer>
+  <div className='final--icons'>
+    <a href="https://wa.me/554991759767?text="><FaSquareWhatsapp /></a>
+    <a href="https://www.instagram.com/paty_tattooer/"><FaSquareInstagram /></a>
+  </div>
+  </footer>
     </>
   );
 }
