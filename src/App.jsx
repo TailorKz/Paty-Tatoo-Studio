@@ -109,7 +109,6 @@ function App() {
                   &nbsp;Enviar mensagem
                 </button>
               </a>
-              <a id="insta" target="_blank" href="#"></a>
             </div>
           </div>
           <div className="container--picture">

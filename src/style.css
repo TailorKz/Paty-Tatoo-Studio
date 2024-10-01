@@ -68,31 +68,24 @@
 .mobile-menu {
   display: none;
 }
+/* ----------------MENU HAMBURGUER---------------*/
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-  /* Ocultar o conteúdo da navbar no mobile */
-
   .navbar {
     background-color: #401C31;
   }
   .navbar--content {
     display: none;
-    
   }
-
-  /* Exibir o ícone do menu hambúrguer */
   .hamburger-icon {
     display: block;
     position: absolute;
-    top: 35px; /* Ajuste conforme necessário */
-    right: 20px; /* Ajuste conforme necessário */
+    top: 35px; 
+    right: 20px; 
     font-size: 30px;
     color: #FFF4EB;
     cursor: pointer;
   }
-
-  /* Estilizar o menu móvel */
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -104,26 +97,26 @@
     padding: 20px;
     gap: 20px;
   }
-
   .mobile-menu a {
     font-size: 18px;
     color: #FFF4EB;
     text-decoration: none;
     text-transform: uppercase;
   }
-
   .mobile-menu a:hover {
     color: #ffc0dd;
   }
 }
 
 
+/* ----------------MENU HAMBURGUER---------------*/
+
 
 .container {
     display: flex;
     margin: 0 auto;
     background-image: url('./assets/fundo5.png');
-    height: 529px;
+    height: auto;
 }
 
 .container--main {
@@ -137,7 +130,7 @@
 
 .container--text {
     margin-top: 100px;
-    margin-left: 80px;
+    margin-left: 10%;
 }
 
 .container--text h1 {
@@ -179,16 +172,17 @@ text-decoration: none;
     max-width: 76%;
 }
 
-@media (max-width: 1652px) {
+@media (max-width: 1699px) {
   .container--main {
     max-width: 100%;
   }
 
 }
 
-@media (max-width: 1487px) {
+@media (max-width: 1529px) {
   .container--main {
     max-width: 100%;
+    justify-content: space-between;
   }
   
   .container--picture img {
@@ -204,12 +198,117 @@ text-decoration: none;
 }
 
 }
+@media (max-width: 1434px) {
+  .container--text h1 {
+    font-size: 48px;
+    color: #FADCD5;
+    margin-right: 70px;;
+  }
+  .container--text {
+    max-width: 40%;
+    width: 100%;
+  }
+   .container--picture img {
+    max-width: 56%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.icons button {
+  margin-top: 8px;
+}
+}
 
 @media (max-width: 1370px) {
   .container {
     height: 20%;
 }
 }
+
+@media (max-width: 1243px) {
+    .navbar--content {
+      gap: 7%;
+    }
+    .container--text {
+      margin-top: 40px;
+    }
+
+    .container--picture img {
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 1206px) { 
+    .container--text h1 {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 1033px) {
+    .container--main {
+      max-width: 100%;
+    }
+    .container--text {
+      max-width: 50%;
+      margin-top: 10px;
+    }
+
+    .container--picture img {
+      margin-top: 0px;
+      width: 100%;
+      height: auto;
+    }
+    .container--picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media (max-width: 960px) {
+    .container--text h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .icons button {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 842px) {
+    .container--text h1 {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container--picture {
+      display: none;
+    }
+    .container--picture img {
+      display: none;
+    }
+    .container--main{
+      max-width: 100%;
+    }
+    .container--text {
+      max-width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .icons {
+      
+      justify-content: center;
+      text-align: center;
+      max-width: 85%;
+      width: 100%;
+      margin-left: 0;
+      padding-bottom: 30px;
+      
+
+    }
+    
+    }
+    
+    
+  
 
 .vazia {
     width: 100%;
@@ -233,6 +332,8 @@ text-decoration: none;
     margin-top: 80px;
 }
 
+
+
 .section--title {
     margin-left: 3em;
     margin-top: 140px;
@@ -252,7 +353,31 @@ text-decoration: none;
     font-family: 'Bebas';
     margin-left: 20px;
     text-align: justify;
-    
+}
+
+@media (max-width: 1000px) {
+  .section--main img {
+    height: 450px;
+}
+.section--title {
+  margin-left: 3em;
+  margin-top: 70px;
+}
+}
+@media (max-width: 900px) {
+  .section--main img {
+    height: 380px;
+}
+.section--title {
+  margin-left: 2em;
+  margin-top: 60px;
+}
+.section--title h1 {
+  font-size: 28px;
+}
+.section--title p {
+  font-size: 20px;
+}
 }
 
 .main {
@@ -442,11 +567,4 @@ text-decoration: none;
   }
 
   
-  @media (max-width: 1243px) {
-    .navbar--content {
-      gap: 7%;
-    }
-
-
-
-  }
+  
