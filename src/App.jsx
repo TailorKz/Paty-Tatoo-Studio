@@ -75,6 +75,9 @@ function App() {
   return (
     <>
        <nav className="navbar">
+       <div className="logo-container">
+       <img src={Studio} alt="Logo" />
+  </div>
         <div className="navbar--content">
           <a href="#">Página inicial</a>
           <a href="#">Sobre mim</a>
@@ -109,6 +112,7 @@ function App() {
                   &nbsp;Enviar mensagem
                 </button>
               </a>
+              <a id="insta" target="_blank" href="#"></a>
             </div>
           </div>
           <div className="container--picture">
@@ -126,10 +130,7 @@ function App() {
             <div className="section--title">
               <h1>SOBRE MIM</h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting.
+              Olá! Meu nome é Patrícia, tenho 19 anos e sou tatuadora aprendiz. Minha jornada no mundo da arte começou há muitos anos, sempre buscando novas formas de me expressar. Decidi migrar para o universo das tatuagens, onde posso trazer à vida minhas criações originais. Acredito que cada tatuagem revela seu melhor lado e transforma de forma positiva sua autoestima. Estou sempre em busca de evolução e novas inspirações para converter sua ideia em realidade no seu corpo!
               </p>
             </div>
           </section>
@@ -156,10 +157,7 @@ function App() {
             <div className="section--title">
               <h1>Tattoos personalizadas!</h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting.
+              Se você está em busca de uma tatuagem exclusiva, estou aqui para ajudar! Sinta-se à vontade para me chamar e discutir suas ideias. Juntos, podemos criar um design que seja o reflexo de sua personalidade e história. Estou disponível para fazer um orçamento personalizado, garantindo que sua experiência seja especial. Vamos transformar sua visão em uma arte que você terá unicamente!
               </p>
             </div>
             <div className="personalize--image">
