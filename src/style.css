@@ -485,7 +485,7 @@ text-decoration: none;
 
 
 .main {
-    height: 2590px;
+    height: auto;
     background-image: url('./assets/fundoantigo.jpg');
     background-repeat: round;
 }
@@ -589,9 +589,30 @@ text-decoration: none;
     height:400px;
     margin-left: 60px;
   }
-
+  .personalize h1 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+.personalize {
+  display: block;
+}
+.personalize p {
+  max-width: 85%;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+.personalize--image {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.personalize--image img {
+  margin-left: 0px;
 }
 
+}
 
 .locate {
     margin-top: 2rem;
@@ -652,19 +673,38 @@ text-decoration: none;
   .locate--map {
     flex: 1;
     height: 400px;
+    padding-bottom: 30px;
     /* Ajuste a altura conforme necessário */
   }
   
   @media (max-width: 768px) {
+    .locate {
+      display: block;
+    }
     .locate--content {
       flex-direction: column;
       align-items: center;
+      display: block;
+
     }
   .vazia {
     height: 40px;
   }
     .locate--map {
       width: 100%;
+    }
+    .locate--title {
+      font-size: 30px;
+    }
+    .locate--text {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .locate--map {
+      display: block;
+      height: 340px;
+      margin-top: 20px;
+      padding-bottom: 30px;
     }
   }
 
