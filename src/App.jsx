@@ -101,10 +101,10 @@ function MyMap() {
         {/* Menu móvel */}
         {menuOpen && (
           <div className="mobile-menu">
-            <a href="#" onClick={() => setMenuOpen(false)}>Página inicial</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Sobre mim</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Contato</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Localização</a>
+            <a href="#pagina-inicial" onClick={() => setMenuOpen(false)}>Página inicial</a>
+            <a href="#sobre-mim" onClick={() => setMenuOpen(false)}>Sobre mim</a>
+            <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
+            <a href="#localizacao" onClick={() => setMenuOpen(false)}>Localização</a>
           </div>
         )}
       </nav>
