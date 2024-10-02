@@ -10,7 +10,7 @@ import { tattoo } from './tattoos';
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import Icone from './assets/icon.png';
+
 import 'leaflet/dist/leaflet.css';
 import { FaSquarePhoneFlip } from "react-icons/fa6";
 import { FiMapPin } from "react-icons/fi";
@@ -53,25 +53,24 @@ function App() {
 
   const visibleImages = getVisibleImages();
 
-    const iconePersonalizado = new L.Icon({
-  iconUrl: Icone, // Caminho para o ícone
-  iconSize: [38, 50], // Tamanho do ícone [largura, altura]
-  iconAnchor: [22, 45], // Âncora do ícone [x, y] (onde ele "aponta")
-  popupAnchor: [0, -45], // Posição do popup relativo ao ícone
-});
-
-const MapaComMarcadorPersonalizado = () => {
-  return (
-    <MapContainer center={[-26.98587539505993, -53.532983784997626]} zoom={19} style={{ height: '400px', width: '100%' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={[-26.98587539505993, -53.532983784997626]} icon={iconePersonalizado}>
-        <Popup>Localização Específica</Popup>
-      </Marker>
-    </MapContainer>
-  );
-};
+    function MyMap() {
+    return (
+      <MapContainer 
+  center={[-26.98587539505993, -53.532983784997626]} 
+  zoom={19} 
+  style={{ height: '100%', width: '100%' }} // Ocupará 100% do contêiner pai
+>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={[-26.98587539505993, -53.532983784997626]}>
+          <Popup>
+            Localização Específica
+          </Popup>
+        </Marker>
+      </MapContainer>
+    );
+  }
  
 
   return (
