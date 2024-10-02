@@ -111,9 +111,9 @@ function MyMap() {
       <section className="container">
         <div className="container--main">
           <div className="container--text">
-            <h1>SUA PELE,</h1>
-            <h1>SUA ARTE,</h1>
-            <h1>SUA <u>IDENTIDADE</u></h1>
+            <h1><span class="destaque">SUA</span> PELE,</h1>
+            <h1><span class="destaque">SUA</span> ARTE,</h1>
+            <h1><span class="destaque">SUA</span> <u>IDENTIDADE!</u></h1>
             <div className="icons">
               <a href="https://wa.me/554991759767?text=" target="_blank">
                 <button>
