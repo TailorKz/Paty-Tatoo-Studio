@@ -18,6 +18,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .destaque {
   color: white;
 }
@@ -28,7 +31,6 @@
     display: flex;
     background-image: url('./assets/Frame 7.png');
     background-size: auto;
-    
     
 }
 
@@ -44,6 +46,9 @@
     gap: 130px;
     border-radius: 40px 40px 40px 40px;
     
+   
+    
+    /* Para garantir que ela fique acima de outros elementos */
 }
 
 .navbar--content a {

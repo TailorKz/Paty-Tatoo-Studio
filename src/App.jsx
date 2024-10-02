@@ -88,11 +88,11 @@ function MyMap() {
        <img src={Studio} alt="Logo" />
   </div>
         <div className="navbar--content">
-          <a href="#">Página inicial</a>
-          <a href="#">Sobre mim</a>
+          <a href="#pagina-inicial">Página inicial</a>
+          <a href="#sobre-mim">Sobre mim</a>
           <img src={Studio} alt="Logo" />
-          <a href="#">Contato</a>
-          <a href="#">Localização</a>
+          <a href="#contato">Contato</a>
+          <a href="#localizacao">Localização</a>
         </div>
         {/* Ícone do menu hambúrguer para mobile */}
         <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
@@ -108,7 +108,7 @@ function MyMap() {
           </div>
         )}
       </nav>
-      <section className="container">
+      <section id="pagina-inicial" className="container">
         <div className="container--main">
           <div className="container--text">
             <h1><span class="destaque">SUA</span> PELE,</h1>
@@ -132,7 +132,7 @@ function MyMap() {
       <div className="vazia"></div>
       <div className="main">
         <div className="section1">
-          <section className="section">
+          <section id="sobre-mim" className="section">
             <div className="section--main">
               <img src={PatyPictureMain} alt="Sobre mim" />
             </div>
@@ -173,7 +173,7 @@ function MyMap() {
               <img src={Coruja} alt="Tatuagem de coruja" />
             </div>
           </section>
-          <div className='locate'>
+          <div id="localizacao" className='locate'>
           <h2 className='locate--title'>Localização do Studio</h2>
           </div>
           <div className='locate--content'>
@@ -191,7 +191,7 @@ function MyMap() {
   </div>
   
       </div><footer>
-  <div className='final--icons'>
+  <div id="contato" className='final--icons'>
     <a href="https://wa.me/554991759767?text="><FaSquareWhatsapp /></a>
     <a href="https://www.instagram.com/paty_tattooer/"><FaSquareInstagram /></a>
   </div>
