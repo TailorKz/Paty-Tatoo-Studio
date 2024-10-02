@@ -503,13 +503,32 @@ text-decoration: none;
   font-size: 36px;
   font-family: 'Bebas Neue';
   letter-spacing: 2px;
+  width: 100%;
 }
+.works {
+  width: 100%;
+  max-width: 100%;
+}
+
 }
 @media (max-width: 600px) {
   .section--main img {
     max-width: 85%;
     height: 100%;
   }
+}
+@media (max-width: 476px) {
+  .works--text h2 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+ }
+ .works {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+ }
 }
 @media (max-width: 396px) {
 .container--main h1 {
@@ -530,9 +549,13 @@ text-decoration: none;
   height: 100%;
 }
 .works--text h2 {
-   font-size: 24px;
+   font-size: 22px;
    text-align: center;
+   margin: 0 auto;
 }
+.works {
+  margin: 0 auto;
+ }
 }
 
 .main {
@@ -552,11 +575,12 @@ text-decoration: none;
 }
 
 .works--text {
-    font-size: 26px;
+    font-size: 24px;
     color: white;
     text-transform: uppercase;
-        
+    text-align: center;
     color: #fadcd5;
+    width: 100%;
 }
 
 .carrossel {
@@ -820,4 +844,5 @@ text-decoration: none;
   }
 
   
+
   
