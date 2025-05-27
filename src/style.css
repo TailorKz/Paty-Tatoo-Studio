@@ -47,8 +47,6 @@ html {
     border-radius: 40px 40px 40px 40px;
     
    
-    
-    /* Para garantir que ela fique acima de outros elementos */
 }
 
 .navbar--content a {
@@ -91,8 +89,7 @@ html {
   }
 
   .logo-container {
-    /* Contenedor da imagem */
-    width: 70px; /* Ajuste o tamanho conforme necessário */
+    width: 70px; 
     height: 70px;
     display: flex;
   }
@@ -100,7 +97,7 @@ html {
   .logo-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ajusta a imagem para caber no container */
+    object-fit: contain;
   }
   .navbar--content {
     display: none;
@@ -120,7 +117,7 @@ html {
     align-items: center;
     background-color: #4b2138f5;
     position: absolute;
-    top: 80px; /* Ajuste com base na altura da sua navbar */
+    top: 80px;
     width: 100%;
     padding: 20px;
     gap: 20px;

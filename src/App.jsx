@@ -111,9 +111,9 @@ function MyMap() {
       <section id="pagina-inicial" className="container">
         <div className="container--main">
           <div className="container--text">
-            <h1><span class="destaque">SUA</span> PELE,</h1>
-            <h1><span class="destaque">SUA</span> ARTE,</h1>
-            <h1><span class="destaque">SUA</span> <u>IDENTIDADE!</u></h1>
+            <h1><span className="destaque">SUA</span> PELE,</h1>
+            <h1><span className="destaque">SUA</span> ARTE,</h1>
+            <h1><span className="destaque">SUA</span> <u>IDENTIDADE!</u></h1>
             <div className="icons">
               <a href="https://wa.me/554991759767?text=" target="_blank">
                 <button>
@@ -139,7 +139,7 @@ function MyMap() {
             <div className="section--title">
               <h1>SOBRE MIM</h1>
               <p>
-              Olá! Meu nome é Patrícia, tenho 19 anos e sou tatuadora aprendiz. Minha jornada no mundo da arte começou há muitos anos, sempre buscando novas formas de me expressar. Decidi migrar para o universo das tatuagens, onde posso trazer à vida minhas criações originais. Acredito que cada tatuagem revela seu melhor lado e transforma de forma positiva sua autoestima. Estou sempre em busca de evolução e novas inspirações para converter sua ideia em realidade no seu corpo!
+              Olá! Meu nome é Patrícia, tenho 20 anos e sou tatuadora aprendiz. Minha jornada no mundo da arte começou há muitos anos, sempre buscando novas formas de me expressar. Decidi migrar para o universo das tatuagens, onde posso trazer à vida minhas criações originais. Acredito que cada tatuagem revela seu melhor lado e transforma de forma positiva sua autoestima. Estou sempre em busca de evolução e novas inspirações para converter sua ideia em realidade no seu corpo!
               </p>
             </div>
           </section>
